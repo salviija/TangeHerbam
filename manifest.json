@@ -8,8 +8,8 @@
     },
     "manifestType": "minecraftModpack",
     "manifestVersion": 1,
-    "name": "SteeledFirmaTech",
-    "version": "1.0.0",
+    "name": "TangeHerbam",
+    "version": "0.0.1",
     "author": "YoungOnion",
     "files": [
         { 
@@ -248,13 +248,43 @@
             "required": true
         },
         {
-            "projectID": 241721,
-            "fileID": 3044416,
+            "projectID": 573154,
+            "fileID": 3627065,
             "required": true
         },
         {
-            "projectID": 241721,
-            "fileID": 3044416,
+            "projectID": 227083,
+            "fileID": 2518667,
+            "required": true
+        },
+        {
+            "projectID": 226406,
+            "fileID": 2857869,
+            "required": true
+        },
+        {
+            "projectID": 361579,
+            "fileID": 3542217,
+            "required": true
+        },
+        {
+            "projectID": 301310,
+            "fileID": 2863053,
+            "required": true
+        },
+        {
+            "projectID": 223852,
+            "fileID": 2887858,
+            "required": true
+        },
+        {
+            "projectID": 228832,
+            "fileID": 2645992,
+            "required": true
+        },
+        {
+            "projectID": 225605,
+            "fileID": 2489549,
             "required": true
         }
     ],
