@@ -1,0 +1,45 @@
+# Configuration file
+
+~CONFIG_VERSION: 0.1.0
+
+world-78688046 {
+    # Show the list of bookmarks next to open GUIs.
+    B:bookmarkOverlayEnabled=true
+
+    # Give items instead of showing the recipe.
+    B:cheatItemsEnabled=true
+
+    # Hide and unhide ingredients by clicking them in the list.
+    B:editEnabled=false
+<<<<<<< HEAD
+    S:filterText=@tfctec
+=======
+    S:filterText=knife
+>>>>>>> 50bafd9e5d95e37b63e297159e347ed644ecd565
+
+    # Show the list of ingredients next to open GUIs.
+    B:overlayEnabled=true
+}
+
+
+world1544803905 {
+    S:filterText=
+}
+
+
+world1855637915 {
+    # Show the list of bookmarks next to open GUIs.
+    B:bookmarkOverlayEnabled=true
+
+    # Give items instead of showing the recipe.
+    B:cheatItemsEnabled=true
+
+    # Hide and unhide ingredients by clicking them in the list.
+    B:editEnabled=false
+    S:filterText=hev
+
+    # Show the list of ingredients next to open GUIs.
+    B:overlayEnabled=true
+}
+
+

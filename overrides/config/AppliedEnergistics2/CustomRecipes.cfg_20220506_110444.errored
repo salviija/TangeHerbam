@@ -1,0 +1,26 @@
+# Configuration file
+
+cache {
+<<<<<<< HEAD
+    S:digest=9589bd2f15efaa7b2188ff12cb247211
+=======
+    S:digest=1b8025697eef4ad0d06fba6f2795f48c
+>>>>>>> 50bafd9e5d95e37b63e297159e347ed644ecd565
+
+    # Caching can save processing time, if there are a lot of items. [default: true]
+    B:enableCache=true
+}
+
+
+general {
+    # Will output more detailed information into the CSV like corresponding items [default: false]
+    B:enableAdditionalInfo=false
+
+    # If true, the CSV exporting will always happen. This will not use the cache to reduce the computation. [default: false]
+    B:enableForceRefresh=false
+
+    # If true, all registered items will be exported containing the internal minecraft name and the localized name to actually find the item you are using. This also contains the item representation of the blocks, but are missing items, which are too much to display e.g. FMP. [default: true]
+    B:exportItemNames=true
+}
+
+
