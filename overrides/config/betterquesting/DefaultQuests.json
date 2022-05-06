@@ -42,7 +42,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Pick up some rocks and sticks from the ground by right clicking, and you can also get more sticks from breaking leaves.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -166,7 +166,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "We are hoping you know how knapping works, (this is gonna be a long run for you if you don\u0027t) however, if you don\u0027t know how, select a stack of 2 or more rocks in your hotbar, and then right click on the ground to open the knapping interface. Recpies for knapping are in JEI.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -268,7 +268,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Make sure you drop the logs and sticks in the same blockspace. Then, use the firestarter on the block below.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -294,8 +294,29 @@
       "rewards:9": {},
       "tasks:9": {
         "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "tfc:firestarter"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "advancement_id:8": "tfc:main/campfire",
+          "index:3": 1,
+          "taskID:8": "bq_standard:advancement"
         }
       }
     },
@@ -306,7 +327,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Timber!\n\nOh, and you can\u0027t actually place these like you\u0027d expect in vanilla. They are smaller and stack like firewood. Use another material to build if you can.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -357,7 +378,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Straw is obtained from harvesting grass with a knife.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -408,7 +429,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Clay can be found as a type of grass under certain plants such as:\n\nThe Aethyrium Fern (most common) is a good source for this.\n\nhttps://tng.terrafirmacraft.com/Clay_Dirt\n-- a link from the TFC wiki showing a slideshow of the acceptable plants.\n\n--salviija",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1790,7 +1811,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Let\u0027s get to work!",
+          "desc:8": "Let\u0027s get to work!\n\nThis process requires a hammer for flux, a barrel, and some products of flux and water, as well as logs and water. Process is well explained in JEI.\n\nI recommend crafting the leather in bulk to reduce time for production.\n\n--salviija",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1861,7 +1882,7 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 1,
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": "dustFlux",
               "id:8": "tfc:powder/flux"
@@ -1946,7 +1967,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Your first armor!",
+          "desc:8": "Your first armor! You will need a good bit of leather for this...\n\nLEATHER KNAPPING REQUIRES A KNIFE!\n\n--salviija",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
