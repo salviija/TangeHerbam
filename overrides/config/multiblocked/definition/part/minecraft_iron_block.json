@@ -1,0 +1,8 @@
+{
+  "canShared": true,
+  "location": "minecraft:iron_block",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "isOpaqueCube": true
+}

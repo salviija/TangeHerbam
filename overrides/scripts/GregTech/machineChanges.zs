@@ -6,7 +6,7 @@ craft.remake(<extendedcrafting:table_advanced>, [
   "atw",
   "bbb"], {
   "l": <minecraft:leather>,
-  "s": <tfc:slab/smooth/basalt>,
+  "s": <ore:slabStonePolished>,
   "w": <tfc:metal/saw/bronze>,
   "a": <tfc:metal/axe/bronze>,
   "t": <minecraft:crafting_table>,
@@ -18,17 +18,6 @@ craft.remake(<extendedcrafting:table_advanced>, [
 #########
 
 #steam boilers
-craft.remake(<metaitem:steam_boiler_coal_bronze>, [
-    "ccc",
-    "cwc",
-    "bfb"], {
-    "b": <minecraft:brick_block>,
-    "f": <tfc:blast_furnace>,
-    "c": <metaitem:plateBronze>,
-    "w": <metaitem:tool.wrench>
-    }
-);
-
 craft.remake(<metaitem:steam_boiler_coal_bronze>, [
     "ccc",
     "cwc",
