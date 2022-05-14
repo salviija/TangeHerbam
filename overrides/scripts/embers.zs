@@ -168,12 +168,11 @@ val stampedMaterials as Material[] = [<material:iron>,
                         <material:nickel>,
                         <material:tin>,
                         <material:bronze>,
-                        <material:electrum>,
-                        <material:blackBronze>
+                        <material:electrum>
                         ];
 
 # Embers Stamping Recipe Removal (Early Game Materials)
 for x in stampedMaterials{
-  Stamper.remove(Utils.ore("plate", x));
-  Stamper.add(Utils.ore("plate", x), Utils.liquid(x)*216, <embers:stamp_plate>);
+  Stamper.remove(Utils.item("plate", x));
+  Stamper.add(Utils.item("plate", x), Utils.fluid(x)*216, <embers:stamp_plate>);
 }
