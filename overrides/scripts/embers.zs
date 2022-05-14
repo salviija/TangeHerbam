@@ -1,5 +1,8 @@
 import scripts.craft.craft.Craft;
 import crafttweaker.item.IItemTransformer;
+import mods.embers.Stamper;
+import mods.gregtech.material.Material;
+import mods.gregtech.recipe.Utils;
 
 craft.remake(<embers:ember_bore>, [
  "sbpbs",
@@ -68,7 +71,7 @@ craft.remake(<embers:stamper_base>, [
  "c": <embers:block_caminite_brick>,
  "w": <ore:craftingToolWrench>
  });
- 
+
 # Stamper
 craft.remake(<embers:stamper>, [
  "cbc",
@@ -156,7 +159,21 @@ craft.remake(<embers:ember_relay>, [
  "B": <ore:plateBronze>,
  });
 
+# Stamped Materials Array (Early Game)
+val stampedMaterials as Material[] = [<material:iron>,
+                        <material:gold>,
+                        <material:silver>,
+                        <material:copper>,
+                        <material:lead>,
+                        <material:nickel>,
+                        <material:tin>,
+                        <material:bronze>,
+                        <material:electrum>,
+                        <material:blackBronze>
+                        ];
 
-
-
- 
+# Embers Stamping Recipe Removal (Early Game Materials)
+for x in stampedMaterials{
+  Stamper.remove(Utils.ore("plate", x));
+  Stamper.add(Utils.ore("plate", x), Utils.liquid(x)*216, <embers:stamp_plate>);
+}
