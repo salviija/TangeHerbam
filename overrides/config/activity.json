@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "YoungOnion",
+      "uniqueId": "3a27782d-6864-4814-a9fe-7c6931f29a8a"
+    },
+    "time": 1652395745689,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/6i2pSA1pCu"
+    }
+  }
+]
