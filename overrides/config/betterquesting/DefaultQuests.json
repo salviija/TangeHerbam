@@ -35,7 +35,28 @@
       },
       "questID:3": 0,
       "rewards:9": {},
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "barrel",
+              "id:8": "tfc:wood/barrel/acacia"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
     "1:10": {
       "preRequisites:11": [],
@@ -600,7 +621,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Pit kilns are made by first digging a hole.\n\nWith a hole, surrounded by 4 blocks of dirt and dirt on the bottom, place in-world any clay pots, vessels, jars, molds, etc. (default key is \u0027v\u0027)\n\nAfter placing everything you want to pit kiln, you will need to fill it with 8 straw followed by 8 logs.\n\nAfter that just light with a fire starter and wait 8 hours.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -636,7 +657,37 @@
       },
       "questID:3": 9,
       "rewards:9": {},
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "fluidMode:1": 0,
+                  "heat:5": 0.0,
+                  "items:10": {
+                    "Items:9": {},
+                    "Size:3": 4
+                  },
+                  "ticks:4": -1
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "tfc:ceramics/fired/vessel"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
     "10:10": {
       "preRequisites:11": [
@@ -690,9 +741,7 @@
       }
     },
     "11:10": {
-      "preRequisites:11": [
-        55
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -701,24 +750,13 @@
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "ForgeCaps:10": {
-              "Parent:10": {
-                "steps:10": {
-                  "last:3": -1,
-                  "second:3": -1,
-                  "third:3": -1
-                },
-                "work:3": 0
-              },
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
             "OreDict:8": "",
-            "id:8": "tfcthings:grindstone_quartz"
+            "id:8": "embers:bin"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Grindstone",
+          "name:8": "Embers Storage",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -731,42 +769,7 @@
       },
       "questID:3": 11,
       "rewards:9": {},
-      "tasks:9": {
-        "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "tfcthings:grindstone_base"
-            },
-            "1:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "ForgeCaps:10": {
-                "Parent:10": {
-                  "steps:10": {
-                    "last:3": -1,
-                    "second:3": -1,
-                    "third:3": -1
-                  },
-                  "work:3": 0
-                },
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "tfcthings:grindstone_quartz"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      }
+      "tasks:9": {}
     },
     "12:10": {
       "preRequisites:11": [
@@ -1413,57 +1416,6 @@
     },
     "23:10": {
       "preRequisites:11": [
-        21
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "Your first Aspectus.",
-          "globalshare:1": 0,
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": "",
-            "id:8": "embers:aspectus_copper"
-          },
-          "ismain:1": 0,
-          "issilent:1": 0,
-          "lockedprogress:1": 0,
-          "name:8": "Copper Aspectus",
-          "questlogic:8": "AND",
-          "repeat_relative:1": 1,
-          "repeattime:3": -1,
-          "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
-        }
-      },
-      "questID:3": 23,
-      "rewards:9": {},
-      "tasks:9": {
-        "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "embers:aspectus_copper"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      }
-    },
-    "24:10": {
-      "preRequisites:11": [
         27
       ],
       "properties:10": {
@@ -1521,7 +1473,7 @@
         }
       }
     },
-    "25:10": {
+    "24:10": {
       "preRequisites:11": [
         18,
         19
@@ -1573,7 +1525,7 @@
         }
       }
     },
-    "26:10": {
+    "25:10": {
       "preRequisites:11": [
         25
       ],
@@ -1624,7 +1576,7 @@
         }
       }
     },
-    "27:10": {
+    "26:10": {
       "preRequisites:11": [
         26
       ],
@@ -1690,7 +1642,7 @@
         }
       }
     },
-    "28:10": {
+    "27:10": {
       "preRequisites:11": [
         27
       ],
@@ -1741,7 +1693,7 @@
         }
       }
     },
-    "29:10": {
+    "28:10": {
       "preRequisites:11": [
         21
       ],
@@ -1759,7 +1711,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "More Aspectus\u0027",
+          "name:8": "All this for a drop of silver?",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -1792,7 +1744,7 @@
         }
       }
     },
-    "30:10": {
+    "29:10": {
       "preRequisites:11": [
         12
       ],
@@ -1825,7 +1777,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "31:10": {
+    "30:10": {
       "preRequisites:11": [
         27
       ],
@@ -1876,9 +1828,14 @@
         }
       }
     },
-    "32:10": {
+    "31:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        0
+        0,
+        2
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1936,9 +1893,6 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "barrel",
               "id:8": "tfc:wood/barrel/acacia"
             }
@@ -2032,7 +1986,7 @@
         }
       }
     },
-    "33:10": {
+    "32:10": {
       "preRequisites:11": [
         32
       ],
@@ -2116,7 +2070,7 @@
         }
       }
     },
-    "34:10": {
+    "33:10": {
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -2147,7 +2101,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "35:10": {
+    "34:10": {
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -2178,10 +2132,16 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "36:10": {
+    "35:10": {
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        2
+      ],
       "preRequisites:11": [
         29,
-        38
+        38,
+        47
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2197,7 +2157,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Coal Boiler",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -2210,9 +2170,27 @@
       },
       "questID:3": 36,
       "rewards:9": {},
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "37:10": {
+    "36:10": {
       "preRequisites:11": [
         12
       ],
@@ -2259,10 +2237,9 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "38:10": {
+    "37:10": {
       "preRequisites:11": [
-        37,
-        42
+        90
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2308,7 +2285,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "39:10": {
+    "38:10": {
       "preRequisites:11": [
         3
       ],
@@ -2341,9 +2318,10 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "40:10": {
+    "39:10": {
       "preRequisites:11": [
-        32
+        32,
+        87
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2374,9 +2352,14 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "41:10": {
+    "40:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        7
+        12,
+        89
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2421,7 +2404,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "42:10": {
+    "41:10": {
       "preRequisites:11": [
         41
       ],
@@ -2469,10 +2452,8 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "43:10": {
-      "preRequisites:11": [
-        23
-      ],
+    "42:10": {
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -2505,7 +2486,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "44:10": {
+    "43:10": {
       "preRequisites:11": [
         8
       ],
@@ -2538,12 +2519,8 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "45:10": {
-      "preRequisites:11": [
-        40,
-        46,
-        51
-      ],
+    "44:10": {
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -2576,9 +2553,14 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "46:10": {
+    "45:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        48
+        6,
+        86
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2609,9 +2591,9 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "47:10": {
+    "46:10": {
       "preRequisites:11": [
-        51
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2642,9 +2624,9 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "48:10": {
+    "47:10": {
       "preRequisites:11": [
-        7
+        2
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2678,10 +2660,8 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "49:10": {
-      "preRequisites:11": [
-        54
-      ],
+    "48:10": {
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -2714,10 +2694,8 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "50:10": {
-      "preRequisites:11": [
-        13
-      ],
+    "49:10": {
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -2727,12 +2705,12 @@
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "tfc:wood/support/oak"
+            "id:8": "minecraft:nether_star"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Support Beams",
+          "name:8": "New Quest",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -2747,7 +2725,1406 @@
       "rewards:9": {},
       "tasks:9": {}
     },
+    "50:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "OreDict:8": "",
+            "id:8": "forge:bucketfilled",
+            "tag:10": {
+              "Amount:3": 1000,
+              "FluidName:8": "latex"
+            }
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Latex",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 51,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "forge:10": {
+                    "steps:10": {
+                      "last:3": -1,
+                      "second:3": -1,
+                      "third:3": -1
+                    },
+                    "work:3": 0
+                  },
+                  "heat:5": 0.0,
+                  "ticks:4": -1
+                }
+              },
+              "OreDict:8": "",
+              "id:8": "tfctech:metal/iron_groove"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "forge:10": {
+                    "steps:10": {
+                      "last:3": -1,
+                      "second:3": -1,
+                      "third:3": -1
+                    },
+                    "work:3": 0
+                  },
+                  "heat:5": 0.0,
+                  "ticks:4": -1
+                }
+              },
+              "OreDict:8": "",
+              "id:8": "tfctech:metal/iron_bowl_mount"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 2,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "tfctech:ceramics/fluid_bowl"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "3:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 3,
+          "requiredFluids:9": {
+            "0:10": {
+              "Amount:3": 1,
+              "FluidName:8": "latex"
+            }
+          },
+          "taskID:8": "bq_standard:fluid"
+        }
+      }
+    },
     "51:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "forge:10": {
+                  "steps:10": {
+                    "last:3": -1,
+                    "second:3": -1,
+                    "third:3": -1
+                  },
+                  "work:3": 0
+                },
+                "heat:5": 0.0,
+                "ticks:4": -1
+              }
+            },
+            "OreDict:8": "",
+            "id:8": "tfctech:metal/iron_bowl_mount"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Iron Bowl Mount",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 52,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "52:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Empty Bowls",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 53,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "53:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 54,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "54:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 55,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "55:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 56,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "56:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Much more efficient wood gathering.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "tfc:wood/lumber/acacia"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Sawmill",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 57,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "57:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 32767,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:controller"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Applied Energistics!!!",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 58,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "58:10": {
+      "preRequisites:11": [
+        58
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 59,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "59:10": {
+      "preRequisites:11": [
+        58
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 60,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "60:10": {
+      "preRequisites:11": [
+        58
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 180,
+            "OreDict:8": "itemIlluminatedPanel",
+            "id:8": "appliedenergistics2:part"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Terminals",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 61,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 200,
+              "OreDict:8": "itemIlluminatedPanel",
+              "id:8": "appliedenergistics2:part"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "61:10": {
+      "preRequisites:11": [
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 360,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:part"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "3x3 crafts with big storage",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 62,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 360,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:part"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "62:10": {
+      "preRequisites:11": [
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 63,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "63:10": {
+      "preRequisites:11": [
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 64,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "64:10": {
+      "preRequisites:11": [
+        58
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:storage_cell_1k",
+            "tag:10": {}
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Matter Disk",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 65,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 35,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:material"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 39,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:material"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:storage_cell_1k",
+              "tag:10": {}
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "65:10": {
+      "preRequisites:11": [
+        65
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 66,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "66:10": {
+      "preRequisites:11": [
+        66
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 67,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "67:10": {
+      "preRequisites:11": [
+        67
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 68,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "68:10": {
+      "preRequisites:11": [
+        80,
+        81,
+        82
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "galacticraftcore:rocket_t1"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Rocket Man",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 69,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "69:10": {
+      "preRequisites:11": [
+        69
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "galacticraftplanets:rocket_t2"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Off To Mars",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 70,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "70:10": {
+      "preRequisites:11": [
+        70,
+        84
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "galacticraftplanets:rocket_t3"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Acid or Flames",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 71,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "71:10": {
+      "preRequisites:11": [
+        71
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier4_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Gas Giants",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 72,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "72:10": {
+      "preRequisites:11": [
+        72
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier5_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Ringing Rocks",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 73,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "73:10": {
+      "preRequisites:11": [
+        73
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier6_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "This Planet is Totally Normal",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 74,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "74:10": {
+      "preRequisites:11": [
+        74
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier7_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Poseidon",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 75,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "75:10": {
+      "preRequisites:11": [
+        75
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier8_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Char or Care?",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 76,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "76:10": {
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier9_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Outer Outer Space",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 77,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "77:10": {
+      "preRequisites:11": [
+        77
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extraplanets:item_tier10_rocket"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Cryostasis",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 78,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "78:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "galacticraftcore:heavy_plating"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Plating",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 79,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "79:10": {
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "galacticraftcore:nose_cone"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Nose Cone",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 80,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "80:10": {
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "galacticraftcore:rocket_fins"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Fins",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 81,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "81:10": {
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 82,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "82:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1001,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Electric Blast Furnace",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 83,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "83:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1019,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Assembly Line",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 84,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "84:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1002,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Vacuum Freezer",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 85,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "85:10": {
+      "preRequisites:11": [
+        7
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "tfc:quern"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Quern",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 86,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "86:10": {
+      "preRequisiteTypes:7": [
+        2,
+        0
+      ],
+      "preRequisites:11": [
+        46,
+        88
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "tfc:crucible"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Crucible",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 87,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "87:10": {
       "preRequisites:11": [
         39
       ],
@@ -2776,13 +4153,13 @@
           "visibility:8": "NORMAL"
         }
       },
-      "questID:3": 51,
+      "questID:3": 88,
       "rewards:9": {},
       "tasks:9": {}
     },
-    "52:10": {
+    "88:10": {
       "preRequisites:11": [
-        0
+        86
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2792,49 +4169,13 @@
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "OreDict:8": "clothHighQuality",
-            "id:8": "tfc:animal/product/wool_cloth"
-          },
-          "ismain:1": 0,
-          "issilent:1": 0,
-          "lockedprogress:1": 0,
-          "name:8": "New Quest",
-          "questlogic:8": "AND",
-          "repeat_relative:1": 1,
-          "repeattime:3": -1,
-          "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
-        }
-      },
-      "questID:3": 52,
-      "rewards:9": {},
-      "tasks:9": {}
-    },
-    "53:10": {
-      "preRequisites:11": [
-        52
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "No Description",
-          "globalshare:1": 0,
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 14,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
             "OreDict:8": "",
-            "id:8": "minecraft:bed"
+            "id:8": "tfc:powder/flux"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Flux",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -2845,13 +4186,14 @@
           "visibility:8": "NORMAL"
         }
       },
-      "questID:3": 53,
+      "questID:3": 89,
       "rewards:9": {},
       "tasks:9": {}
     },
-    "54:10": {
+    "89:10": {
       "preRequisites:11": [
-        9
+        37,
+        42
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2862,43 +4204,7 @@
             "Count:3": 1,
             "Damage:2": 0,
             "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "OreDict:8": "",
-            "id:8": "hotornot:wooden_tongs"
-          },
-          "ismain:1": 0,
-          "issilent:1": 0,
-          "lockedprogress:1": 0,
-          "name:8": "New Quest",
-          "questlogic:8": "AND",
-          "repeat_relative:1": 1,
-          "repeattime:3": -1,
-          "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
-        }
-      },
-      "questID:3": 54,
-      "rewards:9": {},
-      "tasks:9": {}
-    },
-    "55:10": {
-      "preRequisites:11": [
-        43
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "No Description",
-          "globalshare:1": 0,
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 335,
-            "ForgeCaps:10": {
-              "tfc:item_forge:10": {
+              "Parent:10": {
                 "forge:10": {
                   "steps:10": {
                     "last:3": -1,
@@ -2912,48 +4218,12 @@
               }
             },
             "OreDict:8": "",
-            "id:8": "gregtech:meta_ingot"
-          },
-          "ismain:1": 1,
-          "issilent:1": 0,
-          "lockedprogress:1": 0,
-          "name:8": "Wrought Iron ",
-          "questlogic:8": "AND",
-          "repeat_relative:1": 1,
-          "repeattime:3": -1,
-          "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
-        }
-      },
-      "questID:3": 55,
-      "rewards:9": {},
-      "tasks:9": {}
-    },
-    "56:10": {
-      "preRequisites:11": [
-        48
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "No Description",
-          "globalshare:1": 0,
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 0,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "OreDict:8": "",
-            "id:8": "tfcthings:whetstone"
+            "id:8": "tfc:metal/double_ingot/bronze"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Whetstone",
+          "name:8": "Double Bronze Ingot",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -2964,30 +4234,9 @@
           "visibility:8": "NORMAL"
         }
       },
-      "questID:3": 56,
+      "questID:3": 90,
       "rewards:9": {},
-      "tasks:9": {
-        "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "tfcthings:whetstone"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      }
+      "tasks:9": {}
     }
   },
   "questLines:9": {
@@ -3055,7 +4304,7 @@
             "id:8": "tfc:firepit"
           },
           "name:8": "Welcome to Hell",
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "quests:9": {
@@ -3063,358 +4312,309 @@
           "id:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": -96
+          "x:3": -108,
+          "y:3": 24
         },
         "1:10": {
           "id:3": 1,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -336
+          "x:3": 24,
+          "y:3": -252
         },
         "2:10": {
           "id:3": 2,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -276
+          "x:3": 24,
+          "y:3": -192
         },
         "3:10": {
           "id:3": 3,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": -216
+          "x:3": -108,
+          "y:3": -96
         },
         "4:10": {
           "id:3": 4,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -144,
-          "y:3": -216
+          "x:3": -36,
+          "y:3": -96
         },
         "5:10": {
           "id:3": 5,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -216
+          "x:3": 24,
+          "y:3": -96
         },
         "6:10": {
           "id:3": 6,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": -216
+          "x:3": 84,
+          "y:3": -96
         },
         "7:10": {
           "id:3": 7,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -36
+          "x:3": -108,
+          "y:3": 108
         },
         "8:10": {
           "id:3": 8,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -144,
-          "y:3": -156
+          "x:3": -36,
+          "y:3": -36
         },
         "9:10": {
           "id:3": 9,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -156
+          "x:3": 24,
+          "y:3": -36
         },
         "10:10": {
           "id:3": 10,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
-          "y:3": -36
+          "x:3": 300,
+          "y:3": 180
         },
         "11:10": {
-          "id:3": 11,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": 144
-        },
-        "12:10": {
           "id:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -96
+          "x:3": 24,
+          "y:3": 24
         },
-        "13:10": {
+        "12:10": {
           "id:3": 13,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -144,
-          "y:3": -96
+          "x:3": -36,
+          "y:3": 24
         },
-        "14:10": {
+        "13:10": {
           "id:3": 18,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": -96
+          "x:3": 144,
+          "y:3": 24
         },
-        "15:10": {
+        "14:10": {
           "id:3": 19,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": -36
+          "x:3": 84,
+          "y:3": 108
         },
-        "16:10": {
+        "15:10": {
           "id:3": 20,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": -60
+          "x:3": 204,
+          "y:3": 108
         },
-        "17:10": {
+        "16:10": {
           "id:3": 21,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 84
+          "x:3": 264,
+          "y:3": 276
         },
-        "18:10": {
+        "17:10": {
           "id:3": 22,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": -156
+          "x:3": 144,
+          "y:3": -36
         },
-        "19:10": {
-          "id:3": 23,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 144
-        },
-        "20:10": {
+        "18:10": {
           "id:3": 24,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
-          "y:3": -36
+          "x:3": 252,
+          "y:3": 108
         },
-        "21:10": {
+        "19:10": {
           "id:3": 25,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": -36
+          "x:3": 144,
+          "y:3": 108
         },
-        "22:10": {
+        "20:10": {
           "id:3": 26,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": 24
+          "x:3": 144,
+          "y:3": 180
         },
-        "23:10": {
+        "21:10": {
           "id:3": 27,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 108,
-          "y:3": 24
+          "x:3": 204,
+          "y:3": 180
         },
-        "24:10": {
+        "22:10": {
           "id:3": 28,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 24
+          "x:3": 264,
+          "y:3": 216
         },
-        "25:10": {
+        "23:10": {
           "id:3": 29,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 108,
-          "y:3": 84
+          "x:3": 204,
+          "y:3": 276
         },
-        "26:10": {
+        "24:10": {
           "id:3": 30,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": -96
+          "x:3": 84,
+          "y:3": 24
         },
-        "27:10": {
+        "25:10": {
           "id:3": 31,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 96,
-          "y:3": -60
+          "x:3": 300,
+          "y:3": 132
         },
-        "28:10": {
+        "26:10": {
           "id:3": 32,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": -96
+          "x:3": -168,
+          "y:3": 24
         },
-        "29:10": {
+        "27:10": {
           "id:3": 33,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": -36
+          "x:3": -168,
+          "y:3": 108
         },
-        "30:10": {
+        "28:10": {
           "id:3": 36,
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 36,
-          "y:3": 72
+          "x:3": 72,
+          "y:3": 264
         },
-        "31:10": {
+        "29:10": {
           "id:3": 37,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": 24
+          "x:3": -36,
+          "y:3": 108
         },
-        "32:10": {
+        "30:10": {
           "id:3": 38,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": 84
+          "x:3": -36,
+          "y:3": 228
         },
-        "33:10": {
+        "31:10": {
           "id:3": 39,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": -216
+          "x:3": -168,
+          "y:3": -96
         },
-        "34:10": {
+        "32:10": {
           "id:3": 40,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -264,
-          "y:3": -156
+          "x:3": -168,
+          "y:3": -36
         },
-        "35:10": {
+        "33:10": {
           "id:3": 41,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": 24
+          "x:3": 24,
+          "y:3": 108
         },
-        "36:10": {
+        "34:10": {
           "id:3": 42,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": 84
+          "x:3": 24,
+          "y:3": 168
         },
-        "37:10": {
-          "id:3": 43,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 108,
-          "y:3": 144
-        },
-        "38:10": {
+        "35:10": {
           "id:3": 44,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": -156
+          "x:3": -108,
+          "y:3": -36
         },
-        "39:10": {
-          "id:3": 45,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -324,
-          "y:3": -156
-        },
-        "40:10": {
+        "36:10": {
           "id:3": 46,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -324,
-          "y:3": 24
+          "x:3": 144,
+          "y:3": -96
         },
-        "41:10": {
+        "37:10": {
           "id:3": 47,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -384,
-          "y:3": -216
+          "x:3": 84,
+          "y:3": -156
         },
-        "42:10": {
+        "38:10": {
           "id:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -144,
-          "y:3": 24
+          "x:3": -24,
+          "y:3": -192
+        },
+        "39:10": {
+          "id:3": 86,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -168,
+          "y:3": 168
+        },
+        "40:10": {
+          "id:3": 87,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -228,
+          "y:3": -36
+        },
+        "41:10": {
+          "id:3": 88,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -228,
+          "y:3": -96
+        },
+        "42:10": {
+          "id:3": 89,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -228,
+          "y:3": 168
         },
         "43:10": {
-          "id:3": 49,
+          "id:3": 90,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": -216
-        },
-        "44:10": {
-          "id:3": 50,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -144,
-          "y:3": -36
-        },
-        "45:10": {
-          "id:3": 51,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -324,
-          "y:3": -216
-        },
-        "46:10": {
-          "id:3": 52,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": -36
-        },
-        "47:10": {
-          "id:3": 53,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": 0
-        },
-        "48:10": {
-          "id:3": 54,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": -156
-        },
-        "49:10": {
-          "id:3": 55,
-          "sizeX:3": 48,
-          "sizeY:3": 48,
-          "x:3": 36,
-          "y:3": 132
-        },
-        "50:10": {
-          "id:3": 56,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -144,
-          "y:3": 84
+          "x:3": -36,
+          "y:3": 168
         }
       }
     },
@@ -3502,7 +4702,106 @@
           "visibility:8": "NORMAL"
         }
       },
-      "quests:9": {}
+      "quests:9": {
+        "0:10": {
+          "id:3": 69,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": 144
+        },
+        "1:10": {
+          "id:3": 70,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 456
+        },
+        "2:10": {
+          "id:3": 71,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 396
+        },
+        "3:10": {
+          "id:3": 72,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 336
+        },
+        "4:10": {
+          "id:3": 73,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 276
+        },
+        "5:10": {
+          "id:3": 74,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 216
+        },
+        "6:10": {
+          "id:3": 75,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 156
+        },
+        "7:10": {
+          "id:3": 76,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 96
+        },
+        "8:10": {
+          "id:3": 77,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": 36
+        },
+        "9:10": {
+          "id:3": 78,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 684,
+          "y:3": -24
+        },
+        "10:10": {
+          "id:3": 79,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": -12
+        },
+        "11:10": {
+          "id:3": 80,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -60,
+          "y:3": 48
+        },
+        "12:10": {
+          "id:3": 81,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": 48
+        },
+        "13:10": {
+          "id:3": 82,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 36,
+          "y:3": 48
+        }
+      }
     },
     "6:10": {
       "lineID:3": 6,
@@ -3522,7 +4821,36 @@
           "visibility:8": "NORMAL"
         }
       },
-      "quests:9": {}
+      "quests:9": {
+        "0:10": {
+          "id:3": 57,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -492,
+          "y:3": -300
+        },
+        "1:10": {
+          "id:3": 83,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -336,
+          "y:3": -144
+        },
+        "2:10": {
+          "id:3": 84,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -144,
+          "y:3": -240
+        },
+        "3:10": {
+          "id:3": 85,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -240,
+          "y:3": -108
+        }
+      }
     },
     "7:10": {
       "lineID:3": 7,
@@ -3562,7 +4890,85 @@
           "visibility:8": "NORMAL"
         }
       },
-      "quests:9": {}
+      "quests:9": {
+        "0:10": {
+          "id:3": 58,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": -12
+        },
+        "1:10": {
+          "id:3": 59,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": -12
+        },
+        "2:10": {
+          "id:3": 60,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": 72
+        },
+        "3:10": {
+          "id:3": 61,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -72,
+          "y:3": -12
+        },
+        "4:10": {
+          "id:3": 62,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -120,
+          "y:3": -48
+        },
+        "5:10": {
+          "id:3": 63,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -120,
+          "y:3": 24
+        },
+        "6:10": {
+          "id:3": 64,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -156,
+          "y:3": -12
+        },
+        "7:10": {
+          "id:3": 65,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": -48
+        },
+        "8:10": {
+          "id:3": 66,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": -84
+        },
+        "9:10": {
+          "id:3": 67,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 168,
+          "y:3": -120
+        },
+        "10:10": {
+          "id:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 228,
+          "y:3": -156
+        }
+      }
     },
     "9:10": {
       "lineID:3": 9,
@@ -3616,6 +5022,48 @@
           "sizeY:3": 24,
           "x:3": 108,
           "y:3": 48
+        },
+        "2:10": {
+          "id:3": 51,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -360,
+          "y:3": -276
+        },
+        "3:10": {
+          "id:3": 52,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -324,
+          "y:3": -228
+        },
+        "4:10": {
+          "id:3": 53,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -372,
+          "y:3": -192
+        },
+        "5:10": {
+          "id:3": 54,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -420,
+          "y:3": -240
+        },
+        "6:10": {
+          "id:3": 55,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -348,
+          "y:3": -144
+        },
+        "7:10": {
+          "id:3": 56,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -384,
+          "y:3": -96
         }
       }
     }
@@ -3631,7 +5079,7 @@
       "home_offset_y:3": 0,
       "livesdef:3": 3,
       "livesmax:3": 10,
-      "pack_name:8": "",
+      "pack_name:8": "Tange Herbam",
       "pack_version:3": 0,
       "party_enable:1": 1
     }
