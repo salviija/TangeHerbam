@@ -3,6 +3,7 @@ import crafttweaker.item.IItemTransformer;
 import mods.embers.Stamper;
 import mods.gregtech.material.Material;
 import mods.gregtech.recipe.Utils;
+import crafttweaker.oredict.IOreDictEntry;
 
 craft.remake(<embers:ember_bore>, [
  "sbpbs",
@@ -159,20 +160,33 @@ craft.remake(<embers:ember_relay>, [
  "B": <ore:plateBronze>,
  });
 
-# Stamped Materials Array (Early Game)
-val stampedMaterials as Material[] = [<material:iron>,
-                        <material:gold>,
-                        <material:silver>,
-                        <material:copper>,
-                        <material:lead>,
-                        <material:nickel>,
-                        <material:tin>,
-                        <material:bronze>,
-                        <material:electrum>
-                        ];
+ // Embers Materials Conflicting with Gregtech
+ val conflictingMaterials as Material[] = [
+ <material:copper>,
+ <material:gold>,
+ <material:lead>,
+ <material:silver>,
+ <material:aluminium>,
+ <material:bronze>,
+ <material:electrum>,
+ <material:nickel>,
+ <material:tin>,
+ ];
 
-# Embers Stamping Recipe Removal (Early Game Materials)
-for x in stampedMaterials{
-  Stamper.remove(Utils.item("plate", x));
-  Stamper.add(Utils.item("plate", x), Utils.fluid(x)*216, <embers:stamp_plate>);
-}
+ // Merging Oredict for Embers and Gregtech Plates in Stamper
+ val plateOredict as IOreDictEntry[] = [
+ <ore:plateCopper>,
+ <ore:plateGold>,
+ <ore:plateLead>,
+ <ore:plateSilver>,
+ <ore:plateAluminium>,
+ <ore:plateBronze>,
+ <ore:plateElectrum>,
+ <ore:plateNickel>,
+ <ore:plateTin>
+ ];
+
+ for index, x in plateOredict {
+   var y = conflictingMaterials[index];
+   Stamper.add(x.firstItem, Utils.fluid(y)*216, <embers:stamp_plate>);
+ }
