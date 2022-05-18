@@ -188,5 +188,6 @@ craft.remake(<embers:ember_relay>, [
 
  for index, x in plateOredict {
    var y = conflictingMaterials[index];
+   Stamper.remove(x.firstItem);
    Stamper.add(x.firstItem, Utils.fluid(y)*216, <embers:stamp_plate>);
  }
