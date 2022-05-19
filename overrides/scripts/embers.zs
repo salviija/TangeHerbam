@@ -1,5 +1,12 @@
 import scripts.craft.craft.Craft;
 import crafttweaker.item.IItemTransformer;
+import mods.embers.Stamper;
+import mods.gregtech.material.Material;
+import mods.gregtech.recipe.Utils;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.Alloy;
+import mods.embers.Mixer;
+import crafttweaker.liquid.ILiquidStack;
 
 craft.remake(<embers:ember_bore>, [
  "sbpbs",
@@ -68,7 +75,7 @@ craft.remake(<embers:stamper_base>, [
  "c": <embers:block_caminite_brick>,
  "w": <ore:craftingToolWrench>
  });
- 
+
 # Stamper
 craft.remake(<embers:stamper>, [
  "cbc",
@@ -156,7 +163,61 @@ craft.remake(<embers:ember_relay>, [
  "B": <ore:plateBronze>,
  });
 
+ // Embers Materials Conflicting with Gregtech
+ val conflictingMaterials as Material[] = [
+ <material:copper>,
+ <material:gold>,
+ <material:lead>,
+ <material:silver>,
+ <material:aluminium>,
+ <material:bronze>,
+ <material:electrum>,
+ <material:nickel>,
+ <material:tin>,
+ ];
 
+ // Merging Oredict for Embers and Gregtech Plates in Stamper
+ val plateOredict as IOreDictEntry[] = [
+ <ore:plateCopper>,
+ <ore:plateGold>,
+ <ore:plateLead>,
+ <ore:plateSilver>,
+ <ore:plateAluminium>,
+ <ore:plateBronze>,
+ <ore:plateElectrum>,
+ <ore:plateNickel>,
+ <ore:plateTin>
+ ];
 
+ for index, x in plateOredict {
+   var y = conflictingMaterials[index];
+   Stamper.remove(x.firstItem);
+   Stamper.add(x.firstItem, Utils.fluid(y)*216, <embers:stamp_plate>);
+ }
 
- 
+// TFC Alloy -> Mixer
+// List of alloys in Mixer:
+// Sterling silver
+// Rose gold
+// Black steel         -- Process is typically more complex in base TFC, so Mixer Line is not added as of yet
+// Bronze
+// Brass
+// Bismuth bronze
+
+val melterAlloys as string[] = [
+  "STERLING_SILVER",
+  "ROSE_GOLD",
+  "BRONZE",
+  "BRASS",
+  "BISMUTH_BRONZE"
+];
+
+for x in melterAlloys {
+  Alloy.removeAlloy(x);
+}
+
+Mixer.add(<liquid:sterling_silver>*10, [<liquid:copper>*3, <liquid:silver>*7]);
+Mixer.add(<liquid:rose_gold>*10, [<liquid:copper>*2, <liquid:gold>*8]);
+Mixer.add(<liquid:bronze>*10, [<liquid:copper>*9, <liquid:tin>*1]);
+Mixer.add(<liquid:brass>*10, [<liquid:copper>*9, <liquid:zinc>*1]);
+Mixer.add(<liquid:bismuth_bronze>*10, [<liquid:zinc>*2, <liquid:copper>*6, <liquid:bismuth>*2]);
