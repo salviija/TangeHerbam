@@ -12,7 +12,7 @@
   "manifestVersion": 1,
   "name": "TangeHerbam",
   "version": "0.0.1",
-  "author": "YoungOnion",
+  "author": "",
   "files": [
     {
       "projectID": 225643,
@@ -22,6 +22,11 @@
     {
       "projectID": 250577,
       "fileID": 2648656,
+      "required": true
+    },
+    {
+      "projectID": 354975,
+      "fileID": 2843864,
       "required": true
     },
     {
@@ -307,6 +312,11 @@
     {
       "projectID": 363569,
       "fileID": 2884962,
+      "required": true
+    },
+    {
+      "projectID": 278493,
+      "fileID": 3319307,
       "required": true
     },
     {
