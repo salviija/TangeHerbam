@@ -162,6 +162,75 @@ craft.remake(<embers:ember_relay>, [
  "b": <ore:plateBlackBronze>,
  "B": <ore:plateBronze>,
  });
+ 
+ # Ember Splitter
+craft.remake(<embers:beam_splitter>, [
+ "sbs",
+ "BeB", 
+ "sbs" ], { 
+ "e": <embers:ember_emitter>,
+ "b": <ore:plateBlackBronze>,
+ "B": <ore:plateBronze>,
+ "s": <ore:screwBlackBronze>,
+ });
+
+# Superheater
+craft.remake(<embers:superheater>, [
+ "wbw",
+ "bcb",
+ "wbw" ], {
+ "w": <ore:wireGtSingleCopper>,
+ "b": <ore:ingotBronze>,
+ "c": <embers:crystal_ember>,
+ });
+
+# Mechanical Core
+craft.remake(<embers:mech_core>, [
+ "blb",
+ "lwl",
+ "blb" ], {
+ "w": <ore:craftingToolWrench>,
+ "b": <ore:plateBlackBronze>,
+ "l": <ore:plateLead>,
+ });
+
+# Fluid Dial
+craft.remake(<embers:fluid_gauge>*3, [
+ "sbs",
+ "brb",
+ "sbs" ], {
+ "s": <ore:screwBlackBronze>,
+ "r": <minecraft:redstone>,
+ "b": <ore:plateBlackBronze>,
+ });
+
+# Ember Dial
+craft.remake(<embers:ember_gauge>*3, [
+ "sBs",
+ "BrB",
+ "sBs" ], {
+ "s": <ore:screwBronze>,
+ "r": <minecraft:redstone>,
+ "B": <ore:plateBronze>,
+ });
+
+# Caminite Blend
+craft.reshapeless(<embers:blend_caminite>*2, 
+ "cgs", {
+ "c": <minecraft:clay_ball>,
+ "g": <minecraft:gravel>,
+ "s": <minecraft:sand>,
+ });
+
+# Caminite Bricks
+craft.remake(<embers:block_caminite_brick>, [
+ "cmc",
+ "mcm", 
+ "cmc" ], { 
+ "m": <tfc:mortar>,
+ "c": <embers:brick_caminite>,
+ });
+ 
 
  // Embers Materials Conflicting with Gregtech
  val conflictingMaterials as Material[] = [
