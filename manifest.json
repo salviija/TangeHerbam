@@ -12,7 +12,7 @@
   "manifestVersion": 1,
   "name": "TangeHerbam",
   "version": "0.0.1",
-  "author": "YoungOnion",
+  "author": "",
   "files": [
     {
       "projectID": 225643,
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 604054,
-      "fileID": 3782777,
+      "fileID": 3822756,
       "required": true
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "projectID": 361579,
-      "fileID": 3245793,
+      "fileID": 3542217,
       "required": true
     },
     {
@@ -171,7 +171,7 @@
     },
     {
       "projectID": 300777,
-      "fileID": 2656742,
+      "fileID": 3695248,
       "required": true
     },
     {
@@ -181,7 +181,7 @@
     },
     {
       "projectID": 557242,
-      "fileID": 3784798,
+      "fileID": 3808907,
       "required": true
     },
     {
@@ -271,7 +271,7 @@
     },
     {
       "projectID": 319441,
-      "fileID": 3536155,
+      "fileID": 3819917,
       "required": true
     },
     {
@@ -366,7 +366,7 @@
     },
     {
       "projectID": 477021,
-      "fileID": 3784008,
+      "fileID": 3818697,
       "required": true
     },
     {
@@ -376,7 +376,7 @@
     },
     {
       "projectID": 570458,
-      "fileID": 3695079,
+      "fileID": 3811277,
       "required": true
     },
     {
@@ -386,12 +386,12 @@
     },
     {
       "projectID": 223852,
-      "fileID": 2887858,
+      "fileID": 2952606,
       "required": true
     },
     {
       "projectID": 239197,
-      "fileID": 3642364,
+      "fileID": 3784010,
       "required": true
     },
     {
