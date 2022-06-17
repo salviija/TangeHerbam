@@ -1,0 +1,238 @@
+{
+  "consumeCatalyst": false,
+  "location": "tangeherbam:sawmill",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "state": {
+      "id": "gregtech:steam_casing",
+      "meta": 5
+    },
+    "type": "blockstate"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "A     B",
+        "A     A",
+        "A     A",
+        "A     A",
+        "ACCCCCA",
+        "C     C",
+        "C     C",
+        "CCCCCCC"
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "C     C",
+        "CCCCCCC",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "DCCCCCD",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "C     C",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "B     B",
+        "A     @",
+        "A     A",
+        "A     A",
+        "ACCCCCA",
+        "       ",
+        "       ",
+        "       "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_frame_101",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "tangeherbam:sawmill",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:machine",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:steam_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:steam_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "sawmill"
+}

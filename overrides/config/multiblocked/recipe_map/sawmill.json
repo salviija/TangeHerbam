@@ -1,0 +1,46 @@
+{
+  "name": "sawmill",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "3f8c2853-673a-48bf-b136-6c2d6f28a31e",
+      "duration": 40,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"tfc:wood/log/acacia\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"tfc:wood/lumber/acacia\",Count:8b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "31884bff-683f-4ca7-a278-f7019a83d955",
+      "duration": 1,
+      "inputs": {},
+      "outputs": {},
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}
